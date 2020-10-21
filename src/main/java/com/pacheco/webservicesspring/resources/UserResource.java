@@ -12,11 +12,9 @@ import com.pacheco.webservicesspring.entities.User;
 public class UserResource {
 
 	@GetMapping
-	public ResponseEntity<User> findAll(){
-		User u = new User(1L,"Ana","ana@gmail.com","999999","12345");
+	public ResponseEntity<User> findAll() {
+		User u = new User(1L, "Ana", "ana@gmail.com", "999999", "12345");
 		return ResponseEntity.ok().body(u);
 	}
-	
-	
-	
+
 }
