@@ -28,10 +28,10 @@ public class Category implements Serializable {
 	private Set<Product> products = new HashSet<>();
 
 	public Category() {
-
 	}
 
 	public Category(Long id, String name) {
+		super();
 		this.id = id;
 		this.name = name;
 	}
@@ -80,5 +80,4 @@ public class Category implements Serializable {
 			return false;
 		return true;
 	}
-
 }
